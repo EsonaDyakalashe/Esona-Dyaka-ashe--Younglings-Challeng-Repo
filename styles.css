@@ -1,0 +1,146 @@
+body{
+    margin: 10;
+    padding: 10;
+    display: 10;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(250, 248, 248);
+}
+ 
+              
+
+                div {
+                  width: 100px;
+                  height: 100px;
+                  background-color:red ;
+                  position: left;
+                  animation: myfirst 5s linear 2s infinite alternate;
+                }
+                
+                @keyframes myfirst {
+                  0%   {background-color:red; left:0px; top:0px;}
+                  25%  {background-color:yellow; left:200px; top:0px;}
+                  50%  {background-color:blue; left:200px; top:200px;}
+                  75%  {background-color:green; left:0px; top:200px;}
+                  100% {background-color:red; left:0px; top:0px;}
+                }
+               
+                
+                    .dot {
+                      height: 25px;
+                      width: 25px;
+                      background-color: #bbb;
+                      border-radius: 50%;
+                      display: inline-block;
+                    }
+.circle{
+    position: relative;
+    width:20vh;
+    height: 50vh;
+    background: linear-gradient(#33ccff,#ff0066);
+    border-radius: 50%;
+    animation: animate 0.5 linear infinite;
+}
+@keyframes animate{
+    form{
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360);
+    }
+
+}
+circle::after{
+    position: absolute;
+    top: 60px;
+    right: 60px;
+    bottom: 60px;
+    left: 60px;
+    border-radius: 70%;
+    background-color:  rgb(250, 248, 248);
+}
+.circle span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#33ccff,#ff0066);
+    border-radius: 50%;
+}
+.circle span:nth-child(1) {
+    filter: blur(5px);
+}
+.circle span:nth-child(2) {
+    filter: blur(10px);
+}
+.circle span:nth-child(3) {
+    filter: blur(20px);
+}
+.circle span:nth-child(4) {
+    filter: blur(55px);
+}
+@import url('https://fonts.googleapis.com/css?family=Bad+Script');
+body{
+    margin:0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    background: #000;
+    font-family: 'Bad Script',cursive;
+}
+h1{
+    margin:0;
+    padding: 0;
+    color: #111;
+    font-size:10em;
+}
+h1 span{
+    display:table-cell;
+    margin:0;
+    padding:0;
+    animation: animate 2s linear infinite;
+}
+h1 span:nth-child(1){
+    animation-delay:0s ;
+}
+h1 span:nth-child(2){
+    animation-delay:0.25s ;
+}
+h1 span:nth-child(3){
+    animation-delay:0.5s ;
+}
+h1 span:nth-child(4){
+    animation-delay:0.75s ;
+}
+h1 span:nth-child(5){
+    animation-delay:1s ;
+}
+h1 span:nth-child(6){
+    animation-delay:1.25s ;
+}
+h1 span:nth-child(7){
+    animation-delay:1.5s ;
+}
+h1 span:nth-child(8){
+    animation-delay:1.75s ;
+}
+@keyframes animate {
+    0%,100%{
+        color:#fff;
+        filter:blur(2px);
+        text-shadow:0  0  10px #80FF33,
+                   0  0  20px  #80FF33,
+                   0  0  400px #80FF33,
+                   0  0  800px  #80FF33,
+                   0  0  120px  #80FF33,
+                   0  0  200px  #80FF33,
+                   0  0  300px  #80FF33,
+                   0  0  400px  #80FF33
+    }
+    5%,95%{
+        color:#33CEFF;
+        filter:blur(0px);
+        text-shadow: none,
+    }
+}
